@@ -1,6 +1,6 @@
 # Comments by Hosung Joo
 
-Download this project on your <i>desired directory</i> by:
+Download this project(~125MiB) on your <i>desired directory</i> by:
 ```shell
 git clone https://github.com/hsjoo-lghtsnd/AlphaPose
 ```
