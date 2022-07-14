@@ -1,3 +1,47 @@
+# Comments by Hosung Joo
+
+Download this project on your desired directory by:
+```shell
+git clone https://github.com/hsjoo-lghtsnd/AlphaPose
+```
+
+## miniconda installation
+Install your conda environment by:
+
+```shell
+mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm -rf ~/miniconda3/miniconda.sh
+~/miniconda3/bin/conda init bash
+~/miniconda3/bin/conda init zsh
+```
+
+You may reopen your terminal. You will see (base) in your terminal line. You can turn off the auto conda startup on terminal by typing:
+
+```shell
+conda config --set auto_activate_base false
+```
+
+## pytorch installation
+Make sure you have created a new environment for this project as:
+```shell
+conda create --name AlphaPose
+conda activate AlphaPose
+```
+Install your pytorch and other requirements.
+```shell
+conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+conda install pyyaml==5.2 scipy pillow==6.2.2
+conda install cython
+conda install -U -q PyDrive
+```
+
+
+
+
+
+# Original README.md
 
 <div align="center">
     <img src="docs/logo.jpg", width="400">
