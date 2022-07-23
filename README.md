@@ -85,7 +85,7 @@ wget -P ./detector/yolox/data/ https://github.com/Megvii-BaseDetection/YOLOX/rel
 
 ```
 
-However, these files they provide it by GoogleDrive. [yolov3-spp.weights](https://drive.google.com/open?id=1D47msNOOiJKvPOXlnpyzdKA3k6E97NTC),
+However, they provide these files by GoogleDrive. [yolov3-spp.weights](https://drive.google.com/open?id=1D47msNOOiJKvPOXlnpyzdKA3k6E97NTC),
 [MSCOCO FastPose](https://drive.google.com/open?id=1kQhnMRURFiy7NsdS8EFL-8vtqEXOgECn).
 
 Put **yolov3-spp.weights** in <i>(AlphaPoseRoot)</i>/detector/**yolo**/data,
