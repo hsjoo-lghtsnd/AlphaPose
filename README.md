@@ -2,7 +2,7 @@
 
 This project aims to run AlphaPose in miniconda environment.
 
-Download this frozen project(~125MiB) on your <i>desired directory</i> by:
+Download this frozen (and modified) project(~125MiB) on your <i>desired directory</i> by:
 ```shell
 git clone https://github.com/hsjoo-lghtsnd/AlphaPose
 ```
