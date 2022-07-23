@@ -1,11 +1,13 @@
 # Comments by Hosung Joo
 
-This project aims to run AlphaPose in miniconda environment.
+My project aims to run AlphaPose in miniconda environment.
 
 Download this frozen (and modified) project(~125MiB) on your <i>desired directory</i> by:
 ```shell
 git clone https://github.com/hsjoo-lghtsnd/AlphaPose
 ```
+
+Pre-trained models are very heavy (>1GB), so be prepared for the data size.
 
 ## Installation
 
@@ -66,11 +68,17 @@ Run the shell scripts below. This takes very long time. (With less than 10 minut
 ```shell
 export PATH=/usr/local/cuda-11.3/bin/:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda-11.3/lib64/:$LD_LIBRARY_PATH
+cd AlphaPose
 python setup.py build develop
 ```
 
+## Downloading Pre-trained Models
 
+Pre-trained models are very heavy. (~4GB)
 
+```shell
+wget -P ./detector/yolox/data/ https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.0/yolox_x.pth
+```
 
 
 
