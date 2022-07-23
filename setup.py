@@ -172,10 +172,16 @@ def get_install_requires():
         install_requires.append('pycocotools')
     return install_requires
 
-
 def is_installed(package_name):
-    from pip._internal.utils.misc import get_installed_distributions
-    for p in get_installed_distributions():
+    # by issue of https://github.com/pypa/pip/issues/5243, this function is modified. - Hosung Joo
+    
+    import pkg_resources
+    dists = [d for d in pkg_resources.working_set]
+    
+    #from pip._internal.utils.misc import get_installed_distributions
+    #for p in get_installed_distributions():
+    
+    for p in dists:
         if package_name in p.egg_name():
             return True
     return False
