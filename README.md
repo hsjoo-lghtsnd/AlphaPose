@@ -5,7 +5,17 @@ Download this project(~125MiB) on your <i>desired directory</i> by:
 git clone https://github.com/hsjoo-lghtsnd/AlphaPose
 ```
 
-## miniconda installation
+## Installation
+
+#### NOTE
+
+Note that this program requires 'libyaml-dev' package installed. You may need <i>sudo</i> operation.
+
+```shell
+sudo apt-get install libyaml-dev
+```
+
+### miniconda installation
 Install your conda environment by:
 
 ```shell
@@ -23,25 +33,38 @@ You may reopen your terminal. You will see (base) in your terminal line. You can
 conda config --set auto_activate_base false
 ```
 
-## pytorch installation
+### pytorch installation
 Make sure you have created a new environment for this project as:
 ```shell
 conda create --name AlphaPose
 conda activate AlphaPose
 ```
-Install your pytorch and other requirements.
+#### NOTE
+You can remove the environment by:
 ```shell
-conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
-conda install pyyaml==5.2 scipy pillow==6.2.2
-conda install cython
-conda install -U -q PyDrive
+conda env remove -n AlphaPose
 ```
 
-## install with pip
+Make sure that your environment is activated. Install your pytorch and other requirements.
 ```shell
-export PATH=/usr/local/cuda/bin/:$PATH
-export LD_LIBRARY_PATH=/usr/local/cuda/lib64/:$LD_LIBRARY_PATH
-pip install .
+conda install pyyaml==5.2
+conda install scipy
+conda install pytorch torchvision cudatoolkit=11.3 -c pytorch
+python -m pip install cython
+```
+
+#### NOTE
+
+Note that running below requires your machine path directory.
+
+![conda-cuda](https://user-images.githubusercontent.com/46191084/180616057-f90c45c1-d938-401f-bb32-112500614194.png)
+
+Run the shell scripts below.
+
+```shell
+export PATH=/usr/local/cuda-11.3/bin/:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-11.3/lib64/:$LD_LIBRARY_PATH
+python setup.py build develop
 ```
 
 
