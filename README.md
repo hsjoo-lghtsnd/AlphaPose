@@ -77,8 +77,27 @@ python setup.py build develop
 Pre-trained models are very heavy. Although we can use wget for ease. (~1GB)
 
 ```shell
+mkdir ./detector/yolo/data
+mkdir ./detector/tracker/data
+mkdir ./detector/yolox/data
+
 wget -P ./detector/yolox/data/ https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.0/yolox_x.pth
+
 ```
+
+However, these files they provide it by GoogleDrive. [yolov3-spp.weights](https://drive.google.com/open?id=1D47msNOOiJKvPOXlnpyzdKA3k6E97NTC),
+[MSCOCO FastPose](https://drive.google.com/open?id=1kQhnMRURFiy7NsdS8EFL-8vtqEXOgECn).
+
+Put **yolov3-spp.weights** in <i>(AlphaPoseRoot)</i>/detector/**yolo**/data,
+and **fast_res50_256x192.pth in <i>(AlphaPoseRoot)</i>/detector/**tracker**/data.
+
+You can run below:
+```shell
+python3 scripts/demo_inference.py --cfg configs/coco/resnet/256x192_res50_lr1e-3_1x.yaml --checkpoint pretrained_models/fast_res50_256x192.pth --indir examples/demo/ --save_img
+```
+Then, the result will appear in examples/demo/res. Visual representation will be included in examples/demo/res/vis. You can replace the files in examples/demo for more inference.
+
+
 
 #### NOTE
 (The explanation below is copied from /docs/install.md)
