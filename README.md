@@ -89,7 +89,7 @@ However, these files they provide it by GoogleDrive. [yolov3-spp.weights](https:
 [MSCOCO FastPose](https://drive.google.com/open?id=1kQhnMRURFiy7NsdS8EFL-8vtqEXOgECn).
 
 Put **yolov3-spp.weights** in <i>(AlphaPoseRoot)</i>/detector/**yolo**/data,
-and **fast_res50_256x192.pth in <i>(AlphaPoseRoot)</i>/detector/**tracker**/data.
+and **fast_res50_256x192.pth** in <i>(AlphaPoseRoot)</i>/detector/**tracker**/data.
 
 You can run below:
 ```shell
