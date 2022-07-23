@@ -1,5 +1,7 @@
 # Comments by Hosung Joo
 
+This project aims to run AlphaPose in miniconda environment.
+
 Download this project(~125MiB) on your <i>desired directory</i> by:
 ```shell
 git clone https://github.com/hsjoo-lghtsnd/AlphaPose
@@ -59,7 +61,7 @@ Note that running below requires your machine path directory.
 
 ![conda-cuda](https://user-images.githubusercontent.com/46191084/180616057-f90c45c1-d938-401f-bb32-112500614194.png)
 
-Run the shell scripts below.
+Run the shell scripts below. This takes very long time. (With less than 10 minutes, it will be compiled by using <i>nvcc</i> cuda compiler.) You may see several warning signs, but as long as you don't actually see a error message, it is fine.
 
 ```shell
 export PATH=/usr/local/cuda-11.3/bin/:$PATH
