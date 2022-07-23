@@ -74,7 +74,7 @@ python setup.py build develop
 
 ## Downloading Pre-trained Models
 
-Pre-trained models are very heavy. (~4GB)
+Pre-trained models are very heavy. Although we can use wget for ease. (~1GB)
 
 ```shell
 wget -P ./detector/yolox/data/ https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.0/yolox_x.pth
