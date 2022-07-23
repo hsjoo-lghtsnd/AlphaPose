@@ -97,6 +97,9 @@ python3 scripts/demo_inference.py --cfg configs/coco/resnet/256x192_res50_lr1e-3
 ```
 Then, the result will appear in examples/demo/res. Visual representation will be included in examples/demo/res/vis. You can replace the files in examples/demo for more inference.
 
+![1](https://user-images.githubusercontent.com/46191084/180618128-3e7b7610-1a09-41c1-a1e0-57d298d2bdd9.jpg)
+
+
 
 
 #### NOTE
